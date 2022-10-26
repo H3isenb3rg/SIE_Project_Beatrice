@@ -1,0 +1,31 @@
+Dei 3 casi d'uso specificati viene presentata solamente la scheda di specifica dell'accesso alla lista 
+degli eventi futuri perché gli altri due riguardano solamente la visualizzazione di una pagina statica:
+\begin{itemize}
+    \item \textbf{Accedi a Galleria} $\rightarrow$ Utente visualizza la pagina della galleria con foto e video di eventi passati
+    \item \textbf{Accedi a Contatti e Membri del Team} $\rightarrow$ Utente visualizza i diversi canali attraverso i quali può contattare il team ed una lista di tutti i membri con foto e ruolo all'interno del team
+\end{itemize}
+
+\begin{table}[H]
+    \begin{center}  
+        \begin{tabular}{ | l | p{13cm} |} % you can change the dimension according to the spacing requirements  
+        \hline
+        \textbf{Titolo} & \textbf{Accedi a lista Eventi Futuri}\\ \hline  
+           
+        Scopo & Come gli Utenti Esterni non Registrati possono visualizzare e filtrare una lista ordinata dei prossimi eventi programmati ed i relativi dettagli\\ \hline  
+           
+        Pre-Condizione & Nessuna\\ \hline  
+           
+        Post-Condizione & Utente visualizza correttamente gli eventi (ordinati in base alla data) ed i dettagli eventualmente filtrando la lista in base alla venue desiderata o in base a del testo inserito nella search box\\ \hline  
+           
+        Workflow & Il caso d'uso prevede i seguenti passi
+        \begin{itemize}
+            \item Visualizza una versione limitata della lista (i prossimi 4/5 eventi) direttamente nella homepage oppure entra nella pagina dedicata
+            \item Nella pagina dedicata l'utente visualizza la lista di tutti gli eventi ed imposta i filtri
+            \item Lista viene aggiornata e utente visualizza eventi che rispettano i filtri imposti
+        \end{itemize}\\  
+        \hline
+           
+        \end{tabular}  
+        \caption{Scheda di Specifica - Accesso alla lista degli eventi}
+    \end{center}  
+\end{table}

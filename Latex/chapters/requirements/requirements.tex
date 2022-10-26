@@ -1,0 +1,29 @@
+\chapter{Specifica dei Requisiti}\label{ch:requirements}
+In questo capitolo vengono descritti:
+\begin{itemize}
+  \item Gerarchia degli utenti che interagiranno con il sito.
+  \item Requisit funzionali degli utenti
+  \item Dizionario dei Dati
+  \item Site View
+\end{itemize}
+
+\section{Gerarchia degli Utenti}\label{sec:user_hierarchy}
+
+\begin{figure}[H]
+  \centering
+  \includesvg[inkscapelatex=false, scale=0.60]{diagrams/User Hierarchy.svg}
+  \caption{User Hierarchy}
+\end{figure}
+
+\section{Schede Utenti}\label{sec:users}
+
+\input{tables/Users/external_unregistered}
+\input{tables/Users/external_registered}
+\input{tables/Users/venue_admin}
+\input{tables/Users/team_member}
+\input{tables/Users/team_admin}
+
+\newpage
+\section{Casi d'Uso}\label{sec:use_cases}
+\input{chapters/requirements/use cases/unregistered.tex}
+\input{chapters/requirements/use cases/external_registered.tex}

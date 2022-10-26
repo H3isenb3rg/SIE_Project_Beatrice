@@ -1,0 +1,58 @@
+Non viene presentata la scheda di specifica del Log In e della Modifica dei Dati del profilo perché sono casi d'uso comuni
+
+\begin{itemize}
+    \item \textbf{Log In} $\rightarrow$ Utente effettua autenticazione utilizzando username(email) e password forniti quando ha effettuato la registrazione
+    \item \textbf{Modifica dei dati del profilo} $\rightarrow$ Utente ha la possibilità di accedere alla sua pagina personale e modificare i propri dati
+\end{itemize}
+
+\begin{table}[H]
+    \begin{center}  
+        \begin{tabular}{ | l | p{13cm} |} % you can change the dimension according to the spacing requirements  
+        \hline
+        \textbf{Titolo} & \textbf{Crea Prenotazione}\\ \hline  
+           
+        Scopo & Quello che deve fare l'utente per poter creare una nuova prenotazione ad un evento futuro al quale è interessato\\ \hline  
+           
+        Pre-Condizione & Utente effettua il Log In con la propria utenza e visualizza i dettagli dell'evento al quale è interessato\\ \hline  
+           
+        Post-Condizione & La nuova prenotazione per l'evento scelto viene creata rispettando i parametri definiti dall'utente\\ \hline  
+           
+        Workflow & Il caso d'uso prevede i seguenti passi
+        \begin{itemize}
+            \item Utente effettua il Log In
+            \item Trova un evento al quale è interessato e visualizza i dettagli
+            \item Essendo un utente registrato ha la possibilità di creare una prenotazione
+            \item Utente visualizza un form dove gli vengono chiesti i dati relativi alla prenotazione
+            \item Utente conferma i dati inseriti e se i posti ancora disponibili per l'evento sono sufficienti la prenotazione viene creata e confermata
+        \end{itemize}\\ \hline  
+           
+        \end{tabular}  
+        \caption{Scheda di Specifica - Creazione di una prenotazione}
+    \end{center}  
+\end{table}
+
+\begin{table}[H]
+    \begin{center}  
+        \begin{tabular}{ | l | p{13cm} |} % you can change the dimension according to the spacing requirements  
+        \hline
+        \textbf{Titolo} & \textbf{Modifica Prenotazione}\\ \hline  
+           
+        Scopo & Quello che deve fare l'utente per poter effettuare delle modifiche alla prenotazione\\ \hline  
+           
+        Pre-Condizione & Utente ha effettuato il Log In e la prenotazione da modificare deve essere per un evento futuro\\ \hline  
+           
+        Post-Condizione & Le eventuali modifiche vengono salvare o la prenotazione viene cancellata se l'utente ha deciso di annullarla\\ \hline  
+           
+        Workflow & Il caso d'uso prevede i seguenti passi
+        \begin{itemize}
+            \item Utente effettua il Log In
+            \item Attraverso la lista delle sue prenotazioni visualizza i dettagli di una sua prenotazione
+            \item Effettua le modifiche oppure sceglie di annullare la prenotazione
+            \item Se modifiche rispettano il numero di posti ancora disponibili per l'evento la prenotazione viene aggiornata oppure viene annullata(nel caso di richiesta di annullamento)
+            \item Utente visualizza le proprie modifiche nella pagina delle prenotazioni
+        \end{itemize}\\ \hline  
+           
+        \end{tabular}  
+        \caption{Scheda di Specifica - Modifica di una prenotazione}
+    \end{center}  
+\end{table}
